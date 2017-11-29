@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_2"
+    android:orientation="vertical"
+    tools:context="com.example.android.myrecord.Assignment_StartPro">
+
+    <TextView
+        android:id="@+id/headingASP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Heading"
+        android:textColor="#0d0d0d"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/startASP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="67dp"
+        android:background="@drawable/btn_style"
+        android:gravity="center"
+        android:text="Continue"
+        android:textColor="#0d0d0d" />
+
+    <TextView
+        android:id="@+id/semesterASP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headingASP"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Semester :"
+        android:textColor="#0d0d0d"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teacherASP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/semesterASP"
+        android:layout_alignBottom="@+id/semesterASP"
+        android:layout_alignParentRight="true"
+        android:text="Teacher :"
+        android:textColor="#0d0d0d"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subjectASP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/semesterASP"
+        android:layout_below="@id/semesterASP"
+        android:layout_marginTop="16dp"
+        android:text="Subject :"
+        android:textColor="#0d0d0d"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/durationASP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/teacherASP"
+        android:layout_alignTop="@+id/subjectASP"
+        android:text="Duration :"
+        android:textColor="#0d0d0d"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/instructionsASP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="You have 20 seconds to answer each question! You'll get 1 point for every correct answer!"
+        android:textColor="#0d0d0d"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

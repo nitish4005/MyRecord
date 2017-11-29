@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.myrecord">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/imageicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/imageicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".HomeScreen" />
+        <activity android:name=".Assignments_List"
+            android:label="Assignments"/>
+        <activity android:name=".Assignment_StartPro"
+            android:label="Assignments"/>
+        <activity android:name=".FeedBack"
+            android:label="Feedback"/>
+        <activity android:name=".Assignment_Started"
+            android:label="Assignments"/>
+        <activity android:name=".Form"
+            android:label="Form"/>
+        <activity android:name=".Starting_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".SubjectSelection" />
+        <activity android:name=".PracticeStart" />
+        <activity android:name=".FinalActivity"></activity>
+    </application>
+
+</manifest>

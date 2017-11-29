@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_2"
+    tools:context="com.example.android.myrecord.FeedBack">
+
+
+  <TextView
+      android:id="@+id/headingTvFeedBack"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Heading"
+      android:textSize="25dp"
+      android:textStyle="bold"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="26dp"
+      android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/headingFeedBack"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/headingTvFeedBack"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/rect"
+        />
+
+    <TextView
+        android:id="@+id/MessageTvFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@id/headingFeedBack"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+
+        android:layout_margin="10dp"
+        android:layout_below="@id/MessageTvFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/rect"
+        android:id="@+id/messageFeedback" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageFeedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/btn_style"
+        android:shadowColor="#FF8000"
+        android:text="Submit" />
+
+
+</RelativeLayout>

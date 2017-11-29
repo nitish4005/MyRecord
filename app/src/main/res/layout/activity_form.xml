@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_2"
+    tools:context="com.example.android.myrecord.Form">
+
+    <TextView
+        android:id="@+id/yourdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp"
+        android:text="Your Details"
+        android:textColor="#220b6e"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yourdetail"
+        android:layout_marginStart="13dp"
+        android:text="Name :"
+        android:textColor="#0d0d0d"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/enrollmentTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/nametv"
+        android:layout_below="@id/nametv"
+        android:layout_marginTop="24dp"
+        android:text="Enrollment :"
+        android:textColor="#0d0d0d"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/semestertv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/enrollmentTv"
+        android:layout_below="@+id/enrollmentTv"
+        android:layout_marginTop="24dp"
+        android:text="Semester :"
+        android:textColor="#0d0d0d"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/semestertv"
+        android:layout_below="@+id/semestertv"
+        android:layout_marginTop="24dp"
+        android:text="Department :"
+        android:textColor="#0d0d0d"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fathersname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/department"
+        android:layout_below="@+id/department"
+        android:layout_marginTop="24dp"
+        android:text="Father Name :"
+        android:textColor="#0d0d0d"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/mothername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fathersname"
+        android:layout_below="@+id/fathersname"
+        android:layout_marginTop="24dp"
+        android:text="Mother Name :"
+        android:textColor="#0d0d0d"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/mobileno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mothername"
+        android:layout_below="@+id/mothername"
+        android:layout_marginTop="24dp"
+        android:text="Mobile No :"
+        android:textColor="#0d0d0d"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/fatherMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/mothername"
+        android:layout_below="@+id/mobileno"
+        android:layout_marginTop="24dp"
+        android:text="Father's Mobile No:"
+        android:textColor="#0d0d0d"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/fathersnameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/fathersname"
+        android:layout_alignBottom="@id/fathersname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:hint="Father Name"
+        android:background="@drawable/rect"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/mothernameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/mothername"
+        android:layout_alignBottom="@id/mothername"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/rect"
+        android:layout_marginStart="13dp"
+        android:textSize="18sp"
+        android:hint="Mother Name"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/mobilenoEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/mobileno"
+        android:layout_alignBottom="@id/mobileno"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:background="@drawable/rect"
+        android:textSize="18sp"
+        android:hint="Mobile no."
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/fatherMobileEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/fatherMobile"
+        android:layout_alignBottom="@id/fatherMobile"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/rect"
+        android:textSize="18sp"
+        android:hint="Father's Mobile no"
+        android:layout_marginStart="13dp"
+        android:visibility="gone" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_mode_edit" />
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fatherMobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="SAVE"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/semesterEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/semestertv"
+        android:layout_alignBottom="@id/semestertv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:background="@drawable/rect"
+        android:textSize="18sp"
+        android:hint="Semester"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
